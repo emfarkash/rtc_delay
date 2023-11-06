@@ -16,4 +16,5 @@ if [ ! -f "$csv_file" ]; then
 fi
 
 # Call the C++ program with the CSV file as an argument
-./your_cpp_program "$csv_file"
+g++ -o delay_calculator delay_calculator.cpp 
+./delay_calculator "$csv_file"
